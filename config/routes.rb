@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :users
+  #This is just to stub out a future root path.
+  #There is currently no home controller with an index action.
+  root to: "home#index"
 end
