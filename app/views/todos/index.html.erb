@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>User</th>
+      <th>Title</th>
       <th>Description</th>
       <th>Complete</th>
       <th>Due date</th>
@@ -16,7 +16,7 @@
   <tbody>
     <% @todos.each do |todo| %>
       <tr>
-        <td><%= todo.user %></td>
+        <td><%= todo.title %></td>
         <td><%= todo.description %></td>
         <td><%= todo.complete %></td>
         <td><%= todo.due_date %></td>
